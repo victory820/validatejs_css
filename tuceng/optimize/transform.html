@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrap {
+      /* position: relative; */
+      transform: translateX(0);
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap"></div>
+  <script>
+    const node = document.querySelector('#wrap')
+    setTimeout(() => {
+      // node.style.left = '100px'
+      node.style.transform = 'translateX(100px)'
+    }, 2000)
+  </script>
+</body>
+</html>
