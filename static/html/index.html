@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>验证js和css阻塞</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+    }
+  </style>
+  <!-- 1. link进来的css阻塞页面渲染 -->
+  <!-- <link rel="stylesheet" href="/css/sleep-3000-common.css"> -->
+  
+
+  <!-- 2. link进来的css不阻塞页面解析 -->
+  <!-- <link rel="stylesheet" href="/css/sleep-3000-common.css">
+  <script defer src="/js/divlog.js"></script> -->
+
+
+  <!-- 3. js阻塞页面解析 -->
+  <!-- <script src="/js/sleep-3000-test.js"></script>
+  <script defer src="/js/divlog.js"></script> -->
+
+
+  <!-- 4. js阻塞页面渲染 -->
+  <script src="/js/sleep-3000-test.js"></script>
+</head>
+<body>
+<div></div>
+</body>
+</html>
